@@ -11,4 +11,8 @@ const Spinner = ({ message }) => {
   );
 };
 
+Spinner.defaultProps = {
+  message: '',
+};
+
 export default Spinner;
