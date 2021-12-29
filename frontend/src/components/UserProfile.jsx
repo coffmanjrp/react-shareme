@@ -70,7 +70,7 @@ const UserProfile = () => {
               {user.userName}
             </h1>
             <div className="absolute top-0 right-0 p-2 z-1 ">
-              {userId === user._id && (
+              {userId === user?._id && (
                 <GoogleLogout
                   clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
                   render={(renderProps) => (

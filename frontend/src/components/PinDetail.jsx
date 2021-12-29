@@ -48,7 +48,7 @@ const PinDetail = ({ user }) => {
             comment,
             postedBy: {
               _type: 'postedBy',
-              _ref: user._id,
+              _ref: user?._id,
             },
           },
         ])
@@ -103,7 +103,7 @@ const PinDetail = ({ user }) => {
             <p className="mt-3">{pinDetail?.about}</p>
           </div>
           <Link
-            to={`/user-profile/${pinDetail?.postedBy._id}`}
+            to={`/user-profile/${pinDetail?.postedBy?._id}`}
             className="flex gap-2 mt-5 items-center bg-white rounded-lg"
           >
             <img
@@ -135,7 +135,7 @@ const PinDetail = ({ user }) => {
             ))}
           </div>
           <div className="flex flex-wrap mt-6 gap-3">
-            <Link to={`/user-profile/${pinDetail?.postedBy._id}`}>
+            <Link to={`/user-profile/${pinDetail?.postedBy?._id}`}>
               <img
                 src={pinDetail?.postedBy.image}
                 alt={pinDetail?.postedBy.userName}
