@@ -24,9 +24,11 @@ cd frontend
 npm install
 # or
 yarn
+```
 
-# and
+and
 
+```
 cd backend
 
 npm install
@@ -52,9 +54,11 @@ REACT_APP_SANITY_TOKEN=YOUR_SANITY_API_TOKENS
 cd backend
 
 sanity start
+```
 
-# and
+and
 
+```
 cd frontend
 
 npm start
